@@ -1,0 +1,28 @@
+TasmanianSG version: 4.0
+TasmanianSG license: BSD 3-Clause
+
+-------------------------------------------------------------------------------------------------
+Example 1 for OSM: interpolate f(x,y) = cos(0.5 * pi * x) * cos(0.5 * pi * y)
+       using fixed sparse grid with depth 5
+       the error is estimated as the maximum from 1000 random points
+
+ For localp    Number of points: 145   Max. Error: 7.9817443060297144e-03
+
+-------------------------------------------------------------------------------------------------
+Example 2: interpolate f(x,y) = cos(0.5 * pi * x) * cos(0.5 * pi * y)
+   the error is estimated as the maximum from 1000 random points
+   tolerance is set at 1.E-5 and piecewise linear basis functions are used
+
+               Classic refinement 
+ refinement level         points     error   
+         1         9  3.05e-01
+         2        14  2.40e-01
+         3        27  2.11e-01
+         4        58  2.09e-01
+         5       125  1.90e-01
+
+-------------------------------------------------------------------------------------------------
+   a fix sparse grid of level  6  would consist of  321  points
+
+-------------------------------------------------------------------------------------------------
+
